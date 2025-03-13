@@ -10,10 +10,22 @@ Este es nuestro entregable con una interfaz sencilla que mediante un endpoint ob
 - Bryan Ithan Landín Lara | A01636271
 
 
-## Como ejecutarlo.
-1. Clonar el repositorio.
-2. Hacer pnpm install.
-3. Hacer pnpm run start.
+## Verlo deployeado en internet
+1. Visitar ...
+
+## Como ejecutarlo localmente
+1. Clonar el repositorio:
+```
+git clone https://github.com/Sign0ret/books-46.git
+```
+2. Instalar las dependencias utilizando pnpm.
+```
+pnpm install
+```
+3. Ejecutar en modo producción.
+```
+pnpm run start
+```
 4. Visitar http://localhost:3000
 
 ## Puntos que cubrimos.
