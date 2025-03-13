@@ -11,7 +11,7 @@ Este es nuestro entregable con una interfaz sencilla que mediante un endpoint ob
 
 
 ## Verlo deployeado en internet
-1. Visitar ...
+1. Visitar https://books-46.vercel.app/
 
 ## Como ejecutarlo localmente
 1. Clonar el repositorio:
