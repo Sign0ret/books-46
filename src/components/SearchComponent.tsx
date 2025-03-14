@@ -13,7 +13,7 @@ export default function SearchComponent({
   const [debouncedTerm, setDebouncedTerm] = useState("")
   const [isDebouncing, setIsDebouncing] = useState(false)
 
-  // Handle debouncing
+  // Implementamos el debouncing para evitar que se haga una busqueda cada letra que se escribe sino hasta que se deja de escribir.
   useEffect(() => {
     setIsDebouncing(true)
     const timeoutId = setTimeout(() => {
@@ -26,15 +26,13 @@ export default function SearchComponent({
     }
   }, [searchTerm])
 
-  // Call onSearchChange only when debounced term changes
+  // llamamos el onSearchChange cuando cambia el debounce.
   useEffect(() => {
     const triggerSearch = async () => {
       await onSearchChange(debouncedTerm)
     }
 
     triggerSearch()
-    // We're intentionally only including debouncedTerm in the dependency array
-    // because onSearchChange is expected to be stable (wrapped in useCallback)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedTerm])
 
@@ -45,7 +43,6 @@ export default function SearchComponent({
 
   const clearSearch = useCallback(() => {
     setSearchTerm("")
-    // We immediately set the debounced term to empty to avoid the delay when clearing
     setDebouncedTerm("")
   }, [])
 

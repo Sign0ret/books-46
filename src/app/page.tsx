@@ -6,6 +6,7 @@ import type { Book } from "@/interfaces/Book"
 import { BookOpen } from "lucide-react"
 
 export default function Home() {
+  // Utilizamos useState para poder almacenar variables de los libros fetcheados.
   const [books, setBooks] = useState<Book[]>([])
   const [, setSearchTerm] = useState<string>("")
   const [currentPage, setCurrentPage] = useState<number>(1)

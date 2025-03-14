@@ -18,7 +18,7 @@ export default function GridComponent({
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1)
   const prevPageRef = useRef(currentPage)
 
-  // Track page changes to prevent double triggers
+  // Seguimos los cambios de paginación para evitar que regrese a la 1.
   useEffect(() => {
     prevPageRef.current = currentPage
   }, [currentPage])
@@ -33,7 +33,7 @@ export default function GridComponent({
   const visiblePages = getVisiblePages()
 
   const handlePageClick = (page: number) => {
-    // Only trigger page change if it's different from current and previous page
+    // Solo cambia la página si no es la actual ni la previa.
     if (page !== currentPage && page !== prevPageRef.current) {
       onPageChange(page)
     }
