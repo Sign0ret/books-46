@@ -36,3 +36,6 @@ pnpm run start
 - Página principal / con uso de useEffect, useState y useCallback en /src/app/page.tsx y fetches con paginación.
 - Componente de barra de búsqueda en /src/components/SearchComponent.tsx con uso de debounce para hacer búsquedas cuando termina de escribir la persona.
 - Componente de grid de libros en /src/components/GridComponent.tsx con uso de paginación para no hacer fetches gigantes sino particionados.
+
+## Link a nuestro video explicando las partes del proyecto:
+- https://www.canva.com/design/DAGhqVeNUN8/2-uuafTqQKV34zDdzxEmeQ/watch?utm_content=DAGhqVeNUN8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1dd6be5149
